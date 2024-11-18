@@ -1,0 +1,168 @@
+{
+  "version": "4.5",
+  "name": "RansomEXX TTPs",
+  "domain": "enterprise-attack",
+  "description": "Layer depicting TTPs commonly used by the RansomEXX cybercrime group, focusing on ransomware deployment and extortion tactics.",
+  "techniques": [
+    {
+      "techniqueID": "T1566",
+      "tactic": "initial-access",
+      "color": "#ff6666",
+      "comment": "Phishing emails to gain initial access",
+      "enabled": true,
+      "showSubtechniques": true,
+      "subtechniques": [
+        {
+          "techniqueID": "T1566.001",
+          "color": "#ff9999",
+          "comment": "Phishing attachment with malicious payload"
+        },
+        {
+          "techniqueID": "T1566.002",
+          "color": "#ff9999",
+          "comment": "Phishing link to malicious site"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1078",
+      "tactic": "defense-evasion",
+      "color": "#66ccff",
+      "comment": "Use of compromised accounts for lateral movement",
+      "enabled": true,
+      "showSubtechniques": true,
+      "subtechniques": [
+        {
+          "techniqueID": "T1078.002",
+          "color": "#99ccff",
+          "comment": "Valid accounts - Domain Accounts"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1021",
+      "tactic": "lateral-movement",
+      "color": "#66ff66",
+      "comment": "Remote services used for lateral movement",
+      "enabled": true,
+      "showSubtechniques": true,
+      "subtechniques": [
+        {
+          "techniqueID": "T1021.002",
+          "color": "#99ff99",
+          "comment": "SMB/Windows Admin Shares"
+        },
+        {
+          "techniqueID": "T1021.001",
+          "color": "#99ff99",
+          "comment": "Remote Desktop Protocol (RDP)"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1486",
+      "tactic": "impact",
+      "color": "#ffcc66",
+      "comment": "Ransomware encryption of files",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1110",
+      "tactic": "credential-access",
+      "color": "#ff9966",
+      "comment": "Brute force and password spraying attacks",
+      "enabled": true,
+      "showSubtechniques": true,
+      "subtechniques": [
+        {
+          "techniqueID": "T1110.001",
+          "color": "#ffcc99",
+          "comment": "Password guessing"
+        },
+        {
+          "techniqueID": "T1110.003",
+          "color": "#ffcc99",
+          "comment": "Password spraying"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1059",
+      "tactic": "execution",
+      "color": "#66ccff",
+      "comment": "Command and scripting interpreter usage",
+      "enabled": true,
+      "showSubtechniques": true,
+      "subtechniques": [
+        {
+          "techniqueID": "T1059.001",
+          "color": "#99ccff",
+          "comment": "PowerShell"
+        },
+        {
+          "techniqueID": "T1059.003",
+          "color": "#99ccff",
+          "comment": "Windows Command Shell"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1071",
+      "tactic": "command-and-control",
+      "color": "#ffcc66",
+      "comment": "Application layer protocols for C2 communication",
+      "enabled": true,
+      "showSubtechniques": true,
+      "subtechniques": [
+        {
+          "techniqueID": "T1071.001",
+          "color": "#ffcc99",
+          "comment": "Web protocols"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1047",
+      "tactic": "execution",
+      "color": "#66ff66",
+      "comment": "Execution via Windows Management Instrumentation (WMI)",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1041",
+      "tactic": "exfiltration",
+      "color": "#66ffcc",
+      "comment": "Data exfiltration over C2 channels",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1490",
+      "tactic": "impact",
+      "color": "#ff9966",
+      "comment": "Inhibit system recovery by deleting backups",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#ff6666"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "RansomEXX TTPs",
+      "color": "#ff6666"
+    }
+  ]
+}

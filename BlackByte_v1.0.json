@@ -1,0 +1,86 @@
+{
+    "version": "4.5",
+    "layer": {
+        "version": "4.5",
+        "name": "BlackByte Ransomware TTPs",
+        "description": "Layer representing the TTPs used by the BlackByte ransomware gang.",
+        "techniques": [
+            {
+                "techniqueID": "T1071.001",
+                "score": 1,
+                "tactics": ["C2"],
+                "enabled": true
+            },
+            {
+                "techniqueID": "T1046",
+                "score": 1,
+                "tactics": ["Discovery"],
+                "enabled": true
+            },
+            {
+                "techniqueID": "T1566",
+                "score": 1,
+                "tactics": ["Initial Access"],
+                "enabled": true
+            },
+            {
+                "techniqueID": "T1499",
+                "score": 1,
+                "tactics": ["Impact"],
+                "enabled": true
+            },
+            {
+                "techniqueID": "T1203",
+                "score": 1,
+                "tactics": ["Initial Access"],
+                "enabled": true
+            },
+            {
+                "techniqueID": "T1486",
+                "score": 1,
+                "tactics": ["Impact"],
+                "enabled": true
+            },
+            {
+                "techniqueID": "T1059.001",
+                "score": 1,
+                "tactics": ["Execution"],
+                "enabled": true
+            },
+            {
+                "techniqueID": "T1068",
+                "score": 1,
+                "tactics": ["Privilege Escalation"],
+                "enabled": true
+            },
+            {
+                "techniqueID": "T1070.001",
+                "score": 1,
+                "tactics": ["Defense Evasion"],
+                "enabled": true
+            },
+            {
+                "techniqueID": "T1041",
+                "score": 1,
+                "tactics": ["Exfiltration"],
+                "enabled": true
+            },
+            {
+                "techniqueID": "T1053.001",
+                "score": 1,
+                "tactics": ["Persistence"],
+                "enabled": true
+            }
+        ],
+        "gradient": [
+            {
+                "color": "#ff0000",
+                "offset": 0
+            },
+            {
+                "color": "#ffff00",
+                "offset": 100
+            }
+        ]
+    }
+}

@@ -1,0 +1,116 @@
+{
+    "version": "4.5",
+    "name": "LockBit ATT&CK Techniques",
+    "domain": "enterprise-attack",
+    "description": "MITRE ATT&CK techniques used by the LockBit ransomware group",
+    "techniques": [
+      {
+        "techniqueID": "T1566",
+        "tactic": "initial-access",
+        "color": "#ff6666",
+        "comment": "Phishing for initial access"
+      },
+      {
+        "techniqueID": "T1190",
+        "tactic": "initial-access",
+        "color": "#ff6666",
+        "comment": "Exploit Public-Facing Application"
+      },
+      {
+        "techniqueID": "T1078",
+        "tactic": "initial-access",
+        "color": "#ff6666",
+        "comment": "Valid Accounts for Initial Access"
+      },
+      {
+        "techniqueID": "T1059",
+        "tactic": "execution",
+        "color": "#ff6666",
+        "comment": "Command and Scripting Interpreter"
+      },
+      {
+        "techniqueID": "T1204",
+        "tactic": "execution",
+        "color": "#ff6666",
+        "comment": "User Execution"
+      },
+      {
+        "techniqueID": "T1547.001",
+        "tactic": "persistence",
+        "color": "#ff6666",
+        "comment": "Registry Run Keys / Startup Folder"
+      },
+      {
+        "techniqueID": "T1053",
+        "tactic": "persistence",
+        "color": "#ff6666",
+        "comment": "Scheduled Task/Job for Persistence"
+      },
+      {
+        "techniqueID": "T1548",
+        "tactic": "privilege-escalation",
+        "color": "#ff6666",
+        "comment": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "techniqueID": "T1027",
+        "tactic": "defense-evasion",
+        "color": "#ff6666",
+        "comment": "Obfuscated Files or Information"
+      },
+      {
+        "techniqueID": "T1562",
+        "tactic": "defense-evasion",
+        "color": "#ff6666",
+        "comment": "Impair Defenses"
+      },
+      {
+        "techniqueID": "T1003",
+        "tactic": "credential-access",
+        "color": "#ff6666",
+        "comment": "OS Credential Dumping"
+      },
+      {
+        "techniqueID": "T1003.001",
+        "tactic": "credential-access",
+        "color": "#ff6666",
+        "comment": "LSASS Memory"
+      },
+      {
+        "techniqueID": "T1082",
+        "tactic": "discovery",
+        "color": "#ff6666",
+        "comment": "System Information Discovery"
+      },
+      {
+        "techniqueID": "T1087",
+        "tactic": "discovery",
+        "color": "#ff6666",
+        "comment": "Account Discovery"
+      },
+      {
+        "techniqueID": "T1041",
+        "tactic": "exfiltration",
+        "color": "#ff6666",
+        "comment": "Exfiltration Over C2 Channel"
+      },
+      {
+        "techniqueID": "T1486",
+        "tactic": "impact",
+        "color": "#ff6666",
+        "comment": "Encrypt Files for Impact"
+      },
+      {
+        "techniqueID": "T1485",
+        "tactic": "impact",
+        "color": "#ff6666",
+        "comment": "Data Encrypted for Impact"
+      }
+    ],
+    "layout": {
+      "layout": "side",
+      "showID": true,
+      "showName": true
+    }
+  }
+  

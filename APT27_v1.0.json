@@ -1,0 +1,153 @@
+{
+  "version": "4.5",
+  "name": "APT27 (Emissary Panda) TTPs",
+  "domain": "enterprise-attack",
+  "description": "Layer depicting TTPs commonly used by APT27 (Emissary Panda), focusing on espionage and financial theft.",
+  "techniques": [
+    {
+      "techniqueID": "T1566",
+      "tactic": "initial-access",
+      "color": "#ff6666",
+      "comment": "Spear phishing for initial access",
+      "enabled": true,
+      "showSubtechniques": true,
+      "subtechniques": [
+        {
+          "techniqueID": "T1566.001",
+          "color": "#ff9999",
+          "comment": "Spear phishing attachment"
+        },
+        {
+          "techniqueID": "T1566.002",
+          "color": "#ff9999",
+          "comment": "Spear phishing link"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1190",
+      "tactic": "initial-access",
+      "color": "#ff6666",
+      "comment": "Exploitation of public-facing applications",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1218",
+      "tactic": "defense-evasion",
+      "color": "#66ccff",
+      "comment": "Trusted execution using signed binary proxy execution",
+      "enabled": true,
+      "showSubtechniques": true,
+      "subtechniques": [
+        {
+          "techniqueID": "T1218.011",
+          "color": "#99ccff",
+          "comment": "Rundll32"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1543",
+      "tactic": "persistence",
+      "color": "#66ff66",
+      "comment": "Create or modify system processes for persistence",
+      "enabled": true,
+      "showSubtechniques": true,
+      "subtechniques": [
+        {
+          "techniqueID": "T1543.003",
+          "color": "#99ff99",
+          "comment": "Windows Service"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1071",
+      "tactic": "command-and-control",
+      "color": "#ffcc66",
+      "comment": "Application layer protocols for C2 communication",
+      "enabled": true,
+      "showSubtechniques": true,
+      "subtechniques": [
+        {
+          "techniqueID": "T1071.001",
+          "color": "#ffcc99",
+          "comment": "Web protocols for C2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1105",
+      "tactic": "command-and-control",
+      "color": "#ffcc66",
+      "comment": "Remote file transfer tools for data staging and exfiltration",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1003",
+      "tactic": "credential-access",
+      "color": "#66ff66",
+      "comment": "Credential dumping to obtain user credentials",
+      "enabled": true,
+      "showSubtechniques": true,
+      "subtechniques": [
+        {
+          "techniqueID": "T1003.001",
+          "color": "#99ff99",
+          "comment": "LSASS Memory"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1027",
+      "tactic": "defense-evasion",
+      "color": "#66ccff",
+      "comment": "Obfuscation or encrypted commands to evade detection",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1041",
+      "tactic": "exfiltration",
+      "color": "#66ffcc",
+      "comment": "Exfiltration over C2 channel",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1562",
+      "tactic": "defense-evasion",
+      "color": "#ff9999",
+      "comment": "Disabling security tools or indicators",
+      "enabled": true,
+      "showSubtechniques": true,
+      "subtechniques": [
+        {
+          "techniqueID": "T1562.001",
+          "color": "#ffcccc",
+          "comment": "Disable or modify tools"
+        }
+      ]
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#ff6666"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "APT27 TTPs",
+      "color": "#ff6666"
+    }
+  ]
+}
